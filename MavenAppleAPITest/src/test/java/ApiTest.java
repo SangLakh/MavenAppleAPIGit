@@ -20,6 +20,7 @@ public class ApiTest {
 		JsonPath jpath= JsonPath.from(f);// retrieving the json responsefrom the file
 		int NumCars=jpath.get("Car.size()");//no. of elements in the car node
 		
+		
 		//Retrieving and displaying blue tesla cars 
 		System.out.println("Blue Tesla Cars");
 		for(int CarCount=0;CarCount<NumCars;CarCount++) {
